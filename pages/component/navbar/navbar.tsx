@@ -5,7 +5,11 @@ import Container from "@mui/material/Container";
 export default function Navbar() {
   return (
     <>
-      <Container maxWidth="xl">
+      <Container
+        sx={{
+          maxWidth: "1720px !important",
+        }}
+      >
         <Box
           sx={{
             mt: "81px",
