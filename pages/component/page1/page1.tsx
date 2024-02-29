@@ -13,8 +13,8 @@ export default function Page1() {
       <ThemeProvider theme={customTheme}>
         <Container
           sx={{
-            maxWidth: "1720px !important",
-            px: "0px !important",
+            maxWidth: "1920px !important",
+            px: "100px !important",
           }}
         >
           <Box
@@ -54,6 +54,7 @@ export default function Page1() {
                 sx={{
                   color: "white",
                   pt: "20px",
+                  width: "100%",
                 }}
               >
                 a community that gives you a taste of happiness, a place you'll love <br />
@@ -61,8 +62,8 @@ export default function Page1() {
               </Typography>
             </Box>
 
-            <Box sx={{ right: "0", position: "absolute", zIndex: "" }}>
-              <Image src={ImageMain1} alt="Picture of the author" />
+            <Box sx={{ right: "0", position: "absolute", zIndex: "", width: "auto" }}>
+              <Image src={ImageMain1} alt="Picture of the author" style={{ width: "71vw", height: "auto" }} />
             </Box>
           </Box>
         </Container>

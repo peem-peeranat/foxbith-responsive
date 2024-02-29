@@ -13,12 +13,13 @@ export default function Page2() {
     <>
       <ThemeProvider theme={customTheme}>
         <Box>
-          <Box sx={{ position: "absolute", zIndex: "-1" }}>
+          <Box sx={{ position: "absolute", zIndex: "-1", height: "auto", width: "100%" }}>
             <Image src={Fill3} alt="Picture of the author" />
           </Box>
           <Container
             sx={{
-              maxWidth: "1720px !important",
+              maxWidth: "1920px !important",
+              px: "100px !important",
               mb: "250px !important",
             }}
           >
@@ -55,27 +56,38 @@ export default function Page2() {
               </Box>
               <Box
                 sx={{
-                  backgroundColor: "white",
-                  color: "##FFFF",
-                  px: "101px",
-                  py: "109px",
-                  boxShadow: "3",
+                  display: "flex",
                 }}
               >
-                <Typography
-                  variant="subtitle1"
+                <Box
                   sx={{
-                    color: "#0E204E",
-
-                    width: "275px",
+                    backgroundColor: "white",
+                    color: "##FFFF",
+                    px: "101px",
+                    py: "109px",
+                    boxShadow: "3",
                   }}
                 >
-                  Pineapple Island is the most sought-after community in Ibadan that values and puts the needs of their clients first. It is a territory with loft complexes that creates a country life
-                  and homely feeling that is integrated with industrial development. A perfect, professional built abode that gives you the true taste of beauty and happiness.
-                </Typography>
+                  <Typography
+                    variant="subtitle1"
+                    sx={{
+                      color: "#0E204E",
+
+                      width: "275px",
+                    }}
+                  >
+                    Pineapple Island is the most sought-after community in Ibadan that values and puts the needs of their clients first. It is a territory with loft complexes that creates a country
+                    life and homely feeling that is integrated with industrial development. A perfect, professional built abode that gives you the true taste of beauty and happiness.
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    width: "100%",
+                  }}
+                >
+                  <Image src={ImageMain3} alt="Picture of the author" />
+                </Box>
               </Box>
-              <Box></Box>
-              <Image src={ImageMain3} alt="Picture of the author" />
             </Box>
           </Container>
         </Box>

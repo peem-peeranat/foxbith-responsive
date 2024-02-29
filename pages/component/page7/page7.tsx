@@ -6,13 +6,16 @@ import Typography from "@mui/material/Typography";
 import ImageMain7 from "../img/img-6/unsplash_0Zx1bDv5BNY.png";
 import { ThemeProvider } from "@mui/material/styles";
 import customTheme from "../customTheme";
+import Button from "@mui/material/Button";
+
 export default function Page7() {
   return (
     <>
       <ThemeProvider theme={customTheme}>
         <Container
           sx={{
-            maxWidth: "1720px !important",
+            maxWidth: "1920px !important",
+            px: "100px !important",
             mb: "250px !important",
           }}
         >
@@ -37,6 +40,7 @@ export default function Page7() {
                   fontSize: "60px",
                   lineHeight: "79.98pxpx",
                   left: "0px",
+                  pb: "32px",
                 }}
               >
                 Become an
@@ -46,19 +50,22 @@ export default function Page7() {
               <Box
                 sx={{
                   width: "417px",
+                  mb: "48px",
                 }}
               >
                 <Typography variant="subtitle1">a community that gives you a taste of happiness, a place you'll love to live and an opportunity to build a home.</Typography>
               </Box>
-              <Box
-              //   sx={{
-              //     backgroundColor: "#0E204E",
-              //     width: "auto",
-              //     py: "22px",
-              //     px: "73px",
-              //   }}
-              >
-                <Typography>Join Now</Typography>
+              <Box>
+                <Button
+                  variant="contained"
+                  sx={{
+                    py: "22px",
+                    px: "74px",
+                    backgroundColor: "#0E204E",
+                  }}
+                >
+                  <Typography variant="h4">Join Now</Typography>
+                </Button>
               </Box>
             </Box>
 

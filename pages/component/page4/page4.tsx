@@ -13,6 +13,7 @@ import IconLock from "../img/img-4/bytesize_lock.png";
 import IconLamp from "../img/img-4/emojione-monotone_light-bulb.png";
 import { ThemeProvider } from "@mui/material/styles";
 import customTheme from "../customTheme";
+import Grid from "@mui/material/Grid";
 
 export default function Page4() {
   return (
@@ -20,7 +21,8 @@ export default function Page4() {
       <ThemeProvider theme={customTheme}>
         <Container
           sx={{
-            maxWidth: "1720px !important",
+            maxWidth: "1920px !important",
+            px: "100px !important",
             mb: "250px !important",
           }}
         >
@@ -49,8 +51,8 @@ export default function Page4() {
 
           <Box
             sx={{
-              display: "flex",
-              alignItems: "center",
+              display: "grid",
+              gridTemplateColumns: { xs: "1fr", md: "repeat(2, 1fr)" },
             }}
           >
             <Box
@@ -58,9 +60,12 @@ export default function Page4() {
                 display: "flex",
                 alignItems: "center",
                 width: "100%",
+                justifyContent: "flex-end",
               }}
             >
-              <Image src={ImageMain4} alt="Picture of the author" />
+              <Box>
+                <Image src={ImageMain4} alt="Picture of the author" />
+              </Box>
               <Box
                 sx={{
                   backgroundColor: "#0E204E",
@@ -69,14 +74,15 @@ export default function Page4() {
                 }}
               ></Box>
             </Box>
+
             <Box
               sx={{
                 width: "100%",
                 display: "flex",
                 gap: "144px",
-                height: "358px",
-                justifyContent: "flex-end",
+                justifyContent: "flex-start",
                 alignItems: "center",
+                pl: "152px",
               }}
             >
               <Box
@@ -84,6 +90,7 @@ export default function Page4() {
                   display: "flex",
                   flexDirection: "column",
                   gap: "50px",
+                  alignItems: "center",
                 }}
               >
                 <Image src={IconTree} alt="Picture of the author" />
@@ -94,6 +101,7 @@ export default function Page4() {
                   display: "flex",
                   flexDirection: "column",
                   gap: "50px",
+                  alignItems: "center",
                 }}
               >
                 <Image src={IconCash} alt="Picture of the author" />
@@ -104,6 +112,7 @@ export default function Page4() {
                   display: "flex",
                   flexDirection: "column",
                   gap: "50px",
+                  alignItems: "center",
                 }}
               >
                 <Image src={IconWifi} alt="Picture of the author" />
@@ -125,9 +134,9 @@ export default function Page4() {
                 width: "100%",
                 display: "flex",
                 gap: "144px",
-                height: "358px",
-                justifyContent: "flex-start",
+                justifyContent: "flex-end",
                 alignItems: "center",
+                pr: "120px",
               }}
             >
               <Box
@@ -135,6 +144,7 @@ export default function Page4() {
                   display: "flex",
                   flexDirection: "column",
                   gap: "50px",
+                  alignItems: "center",
                 }}
               >
                 <Image src={IconServiece} alt="Picture of the author" />
@@ -145,6 +155,7 @@ export default function Page4() {
                   display: "flex",
                   flexDirection: "column",
                   gap: "50px",
+                  alignItems: "center",
                 }}
               >
                 <Image src={IconLock} alt="Picture of the author" />
@@ -155,6 +166,7 @@ export default function Page4() {
                   display: "flex",
                   flexDirection: "column",
                   gap: "50px",
+                  alignItems: "center",
                 }}
               >
                 <Image src={IconLamp} alt="Picture of the author" />
@@ -166,6 +178,7 @@ export default function Page4() {
                 display: "flex",
                 alignItems: "center",
                 width: "100%",
+                justifyContent: "flex-start",
               }}
             >
               <Box

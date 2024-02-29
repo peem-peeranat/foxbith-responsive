@@ -14,6 +14,12 @@ const customTheme = createTheme({
       fontSize: "60px",
       lineHeight: "79.98px",
     },
+    h5: {
+      fontFamily: "'Playfair Display', serif",
+      fontWeight: 700,
+      fontSize: "32px",
+      lineHeight: "42.66px",
+    },
     subtitle1: {
       fontFamily: "Manrope, sans-serif",
       fontWeight: 400,
@@ -26,6 +32,18 @@ const customTheme = createTheme({
       fontSize: "20px",
       lineHeight: "36px",
     },
+    h4: {
+      fontFamily: "Manrope, sans-serif",
+      fontWeight: 300,
+      fontSize: "20px",
+      lineHeight: "19.14px",
+    },
+    h6: {
+      fontFamily: "Manrope, sans-serif",
+      fontWeight: 400,
+      fontSize: "20px",
+      lineHeight: "27.32px",
+    },
     body1: {
       fontFamily: "Manrope, sans-serif",
       fontWeight: 400,
@@ -37,6 +55,12 @@ const customTheme = createTheme({
       fontWeight: 400,
       fontSize: "18px",
       lineHeight: "27px",
+    },
+    button: {
+      fontFamily: "Manrope, sans-serif",
+      fontWeight: 400,
+      fontSize: "18px",
+      lineHeight: "24.59px",
     },
   },
 });

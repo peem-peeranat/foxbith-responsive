@@ -5,13 +5,16 @@ import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
 import { ThemeProvider } from "@mui/material/styles";
 import customTheme from "../customTheme";
+import Button from "@mui/material/Button";
+
 export default function Page8() {
   return (
     <>
       <ThemeProvider theme={customTheme}>
         <Container
           sx={{
-            maxWidth: "1720px !important",
+            maxWidth: "1920px !important",
+            px: "100px !important",
             mb: "250px !important",
           }}
         >
@@ -55,26 +58,24 @@ export default function Page8() {
               <TextField id="outlined-basic" label="Name" variant="outlined" />
               <TextField id="outlined-basic" label="Phone No" variant="outlined" />
               <TextField id="outlined-basic" label="Email" variant="outlined" />
-              <TextField id="outlined-basic" label="Message" variant="outlined" multiline rows={12} />
+              <TextField id="outlined-basic" label="Message" variant="outlined" multiline rows={9} />
               <Box
                 sx={{
                   display: "flex",
                   justifyContent: "center",
                 }}
               >
-                <Box
-                  sx={{
-                    py: "15px",
-                    px: "50px",
-                    backgroundColor: "#0E204E",
-                    width: "145px",
-                    color: "#FFFFFF",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  Send
+                <Box>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      py: "16px",
+                      px: "52px",
+                      backgroundColor: "#0E204E",
+                    }}
+                  >
+                    <Typography variant="button">Send</Typography>
+                  </Button>
                 </Box>
               </Box>
             </Box>

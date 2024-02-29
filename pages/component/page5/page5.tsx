@@ -22,9 +22,9 @@ export default function Page5() {
       <ThemeProvider theme={customTheme}>
         <Container
           sx={{
-            maxWidth: "1720px !important",
+            maxWidth: "1920px !important",
+            px: "100px !important",
             mb: "250px !important",
-            px: "0px !important",
           }}
         >
           <Box
@@ -46,6 +46,7 @@ export default function Page5() {
                 variant="h2"
                 sx={{
                   color: "#0E204E",
+                  mb: "30px",
                 }}
               >
                 Galleries
@@ -54,6 +55,7 @@ export default function Page5() {
                 variant="subtitle2"
                 sx={{
                   textAlign: "center",
+                  mb: "48px",
                 }}
               >
                 a community that gives you a taste of happiness, a place you’ll love to live and an opportunity to build a home.

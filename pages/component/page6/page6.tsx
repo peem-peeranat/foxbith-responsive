@@ -1,20 +1,22 @@
 import React from "react";
 import Image from "next/image";
-
 import Box from "@mui/joy/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import ImageMain6 from "../img/img-6/Rectangle 51.png";
-import IconMain6 from "../img/img-6/Vector.png";
 import { ThemeProvider } from "@mui/material/styles";
 import customTheme from "../customTheme";
+import CheckBoxV1 from "../check_feature/checkfeature";
+import CheckBoxV2 from "../check_feature/checkfeaturev2";
+
 export default function Page2() {
   return (
     <>
       <ThemeProvider theme={customTheme}>
         <Container
           sx={{
-            maxWidth: "1720px !important",
+            maxWidth: "1920px !important",
+            px: "100px !important",
             mb: "250px !important",
           }}
         >
@@ -41,42 +43,26 @@ export default function Page2() {
               ></Box>
             </Box>
             <Box>
-              <Typography variant="h2" sx={{ color: "#0E204E" }}>
+              <Typography variant="h2" sx={{ color: "#0E204E", mb: "30px" }}>
                 Amazing Features
               </Typography>
               <Box
                 sx={{
-                  width: "542px",
-                  height: "46px",
-                  backgroundColor: "rgba(14, 63, 51, 0.2)",
                   display: "flex",
-                  px: "24px",
-                  py: "13px",
-                  justifyContent: "space-between",
-                  alignItems: "center",
+                  flexDirection: "column",
+                  gap: 2,
                 }}
               >
-                <Typography variant="body1" sx={{ color: "#0E204E" }}>
-                  Lorem ipsum dolor sit amet, consectetur
-                </Typography>
-                <Image src={IconMain6} alt="Picture of the author" />
-              </Box>
-              <Box
-                sx={{
-                  width: "542px",
-                  height: "46px",
-                  backgroundColor: "white",
-                  display: "flex",
-                  px: "24px",
-                  py: "13px",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <Typography variant="body1" sx={{ color: "#0E204E" }}>
-                  Lorem ipsum dolor sit amet, consectetur
-                </Typography>
-                <Image src={IconMain6} alt="Picture of the author" />
+                <CheckBoxV1 />
+                <CheckBoxV2 />
+                <CheckBoxV1 />
+                <CheckBoxV2 />
+                <CheckBoxV1 />
+                <CheckBoxV2 />
+                <CheckBoxV1 />
+                <CheckBoxV2 />
+                <CheckBoxV1 />
+                <CheckBoxV2 />
               </Box>
             </Box>
           </Box>
