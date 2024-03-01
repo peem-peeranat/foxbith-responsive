@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import ImageMain2 from "../img/img-2/unsplash_4T4AcGJvARQ.png";
+import ImageMbMain2 from "../img/img-2/mb-2/unsplash_4T4AcGJvARQ.png";
 import Box from "@mui/joy/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { ThemeProvider } from "@mui/material/styles";
 import customTheme from "../customTheme";
+import Hidden from "@mui/material/Hidden";
 
 export default function Page2() {
   return (
@@ -13,9 +15,9 @@ export default function Page2() {
       <ThemeProvider theme={customTheme}>
         <Container
           sx={{
-            maxWidth: "1920px !important",
-            px: "100px !important",
-            mb: "250px !important",
+            maxWidth: { xs: "767px", xl: "1920px" },
+            px: { xs: "20px", xl: "100px" },
+            mb: { xs: "56px", xl: "250px" },
           }}
         >
           <Box
@@ -24,6 +26,11 @@ export default function Page2() {
               justifyContent: "flex-end",
               alignItems: "center",
               width: "auto",
+              flexDirection: {
+                xs: "column",
+                sm: "column",
+                md: "row",
+              },
             }}
           >
             <Box
@@ -37,6 +44,7 @@ export default function Page2() {
                 variant="h2"
                 sx={{
                   color: "#0E204E",
+                  justifyContent: { sm: "center" },
                 }}
               >
                 About
@@ -50,15 +58,26 @@ export default function Page2() {
             <Box
               sx={{
                 display: "flex",
+                flexDirection: {
+                  xs: "column",
+                  sm: "column",
+                  md: "row",
+                },
+                width: "100%",
               }}
             >
-              <Box
-                sx={{
-                  width: "100%",
-                }}
-              >
-                <Image src={ImageMain2} alt="Picture of the author" />
-              </Box>
+              <Hidden lgDown>
+                <Box
+                  sx={{
+                    width: "100%",
+                  }}
+                >
+                  <Image src={ImageMain2} alt="Picture of the author" />
+                </Box>
+              </Hidden>
+              <Hidden mdUp>
+                <Image src={ImageMbMain2} alt="Picture of the author" style={{ width: "100%", height: "auto", filter: "brightness(64%)" }} />
+              </Hidden>
               <Box
                 sx={{
                   backgroundColor: "#0E204E",

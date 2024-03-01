@@ -1,18 +1,38 @@
 import { createTheme } from "@mui/material/styles";
 
 const customTheme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 767,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
+
   typography: {
     h1: {
       fontFamily: "'Playfair Display', serif",
       fontWeight: 700,
       fontSize: "64px",
       lineHeight: "85.31px",
+      "@media (max-width:960px)": {
+        fontSize: "26px",
+        lineHeight: "34.66px",
+        textAlign: "center",
+      },
     },
     h2: {
       fontFamily: "'Playfair Display', serif",
       fontWeight: 700,
       fontSize: "60px",
       lineHeight: "79.98px",
+      "@media (max-width:960px)": {
+        fontSize: "24px",
+        lineHeight: "31.99px",
+        textAlign: "center",
+      },
     },
     h5: {
       fontFamily: "'Playfair Display', serif",
@@ -31,6 +51,11 @@ const customTheme = createTheme({
       fontWeight: 400,
       fontSize: "20px",
       lineHeight: "36px",
+      "@media (max-width:960px)": {
+        fontSize: "14px",
+        lineHeight: "21px",
+        textAlign: "center",
+      },
     },
     h4: {
       fontFamily: "Manrope, sans-serif",

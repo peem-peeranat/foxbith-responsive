@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import { ThemeProvider } from "@mui/material/styles";
 import customTheme from "../customTheme";
 
-export default function Page2() {
+export default function Page3() {
   return (
     <>
       <ThemeProvider theme={customTheme}>
